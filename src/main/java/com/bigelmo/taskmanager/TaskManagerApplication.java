@@ -12,15 +12,6 @@ import java.util.List;
 @SpringBootApplication
 public class TaskManagerApplication {
 
-    @Bean
-    public List<String> baseWords() {
-        List<String> list = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
-            list.add("Task: " + i);
-        }
-        return list;
-    }
-
     public static void main(String[] args) {
         SpringApplication.run(TaskManagerApplication.class, args);
     }
